@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { IoMdClose } from 'react-icons/io';
+import CartContents from '../Cart/CartContents';
 
 const CartDrawer = ({drawerOpen,toggleCartDrawer}) => {
 
@@ -7,7 +8,7 @@ const CartDrawer = ({drawerOpen,toggleCartDrawer}) => {
 
   return (
     <div 
-        className={`fixed top-0 right-0 w-3/4 sm:w-1/2 md:w-1/4 h-full bg-white shadow-lg transform transition-transform duration-300
+        className={`fixed top-0 right-0 w-3/4 sm:w-1/2 md:w-{30rem} h-full bg-white shadow-lg transform transition-transform duration-300
         flex flex-col z-50 ${drawerOpen?"tranlate-x-0":"translate-x-full"}`}>
         
         {/* close Button */}
@@ -21,6 +22,7 @@ const CartDrawer = ({drawerOpen,toggleCartDrawer}) => {
             <h2 className='text-xl font-semibold mb-4'> Your Card</h2>
 
             {/* Component for cart Contents */}
+            <CartContents/>
 
         </div>
         {/* checkout button fixed at the bottom */}
