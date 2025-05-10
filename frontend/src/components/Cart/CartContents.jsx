@@ -49,7 +49,7 @@ const CartContents = () => {
             </div>
             <div>
                 <p>
-                  ${product.Price.toLocaleString()}
+                  ₹{product.Price.toLocaleString()}
                 </p>
                 <button>
                     <RiDeleteBin3Line classNam="h-6 w-6 mt-2 text-red-600"/>
