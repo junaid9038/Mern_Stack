@@ -4,7 +4,8 @@ import { data } from 'react-router-dom'
 
 const Payment = ({amount,onSuccess,onError}) => {
   return <PayPalScriptProvider options={{"client-id":
-  "AXrDWzYUjk5JMavnA-DE0AuDl21StoQA_vzsHYFhj8a1EDeyfAPtET_kUixDvNGI56acxK46RUy_0or6"}}>
+  import.meta.env.VITE_PAYPAL_CLIENT_ID,}}>
+    
     <PayPalButtons style={{layout:"vertical"}}
     createOrder={(data,actions) => {
         return actions.order.create({
