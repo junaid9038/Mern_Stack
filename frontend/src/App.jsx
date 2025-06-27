@@ -12,6 +12,12 @@ import Checkout from './components/Cart/Checkout'
 import { OrderConfirmationPage } from './Pages/OrderConfirmationPage'
 import { OrderDetails } from './Pages/OrderDetails'
 import MyOrder from './Pages/MyOrder'
+import { AdminLayout } from './components/Admin/AdminLayout'
+import AdminHomePage from './Pages/AdminHomePage'
+import { UserManagement } from './components/Admin/UserManagement'
+import { ProductManagement } from './components/Admin/ProductManagement'
+import { EditProductPage } from './components/Admin/EditProductPage'
+import { OrderManagement } from './components/Admin/OrderManagement'
 
 const App = () => {
   return (
@@ -32,10 +38,18 @@ const App = () => {
           <Route path='order-confirmation' element={<OrderConfirmationPage/>}/>
           <Route path='order/:id' element={<OrderDetails/>}/>
           <Route path='my-orders' element={<MyOrder/>}/>
+         </Route>
+        <Route path='/admin' element={<AdminLayout/>}>{/*Admin Layout*/}
+          <Route index element ={<AdminHomePage/>}/>
+          <Route path='users' element={<UserManagement/>}/>
+          <Route path='products' element={<ProductManagement/>}/>
+          <Route path='products/:id/edit' element={<EditProductPage/>}/>
+          <Route path='orders' element={<OrderManagement/>}/>
 
           
-         </Route>
-        <Route>{/*Admin Layout*/}</Route>
+
+        </Route>
+
       </Routes>
     </BrowserRouter>
   )

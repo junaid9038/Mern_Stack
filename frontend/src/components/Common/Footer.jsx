@@ -84,7 +84,7 @@ const Footer = () => {
                     > 
                      <IoLogoInstagram className='h-5 w-5'/>
                     </a>
-                    <a href="https://www.facebook.com/profile.php?id=61569553637505"
+                    <a href="https://www.linkedin.com/in/garbline-india-5745aa335/"
                        target='_blank'
                        rel='noopener noreferrer'
                        className='hover:text-gray-500'
@@ -95,7 +95,7 @@ const Footer = () => {
                 </div>
                 <p className='text-gray-500'>Call us</p>
                 <FiPhoneCall className='inline-block mr-2'/>
-                +91 9038728332
+                +91 8910044287
 
             </div>
 
